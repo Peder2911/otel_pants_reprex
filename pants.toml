@@ -1,0 +1,24 @@
+[GLOBAL]
+pants_version = "2.16.0.dev7"
+backend_packages = [
+   "pants.backend.python",
+   "pants.backend.docker",
+]
+
+[source]
+root_patterns = [
+   "apps/src/**",
+]
+
+[docker]
+env_vars = [
+   "DOCKER_DEFAULT_PLATFORM=linux/amd64"
+]
+
+[environments-preview.names]
+docker_python = "//:docker_python"
+
+[python]
+interpreter_constraints = [
+   "CPython==3.9.*"
+]

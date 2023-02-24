@@ -1,0 +1,6 @@
+cowsay
+fastapi
+uvicorn
+art
+opentelemetry-distro
+opentelemetry-instrumentation-fastapi
